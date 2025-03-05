@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../assets/Travel.png'
 import { FaCaretDown } from 'react-icons/fa'
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import ResponsiveMenu from './ResponsiveMenu'
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div>
          <Link to='/' onClick={()=> window.scrollTo(0, 0)}>
          <img src={logoImg} alt=""
-         className='h-16 ' />
+         className='h-20 w-24 ' />
          </Link>
         </div>
         {/*Desktop NavLinks  */}

@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     const [priceValue, setPricevalue] = React.useState(40)
   return (
-    <div className='bg-black/20 h-full'>
+    <div className='bg-black/40 h-full'>
         <div className='h-full flex justify-center
         items-center p-4 bg-primary/10'>
     <div className='container grid grid-cols-1 gap-4'>

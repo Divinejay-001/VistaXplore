@@ -11,9 +11,9 @@ const Home = () => {
         autoPlay
         loop
         muted
-        className='absolute right-0 top-0 
+         className='absolute right-0 top-0 
         h-[700px] w-full object-cover z-[-1]'>
-          <source src={NatureVideo}
+          <source src='https://videos.pexels.com/video-files/30801742/13174138_1440_2560_30fps.mp4'
           type='video/mp4'/> 
         </video>
                 <Hero/>
