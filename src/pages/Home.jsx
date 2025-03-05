@@ -1,6 +1,7 @@
 import React from 'react'
 import NatureVideo from '../assets/video/main.mp4'
 import Hero from '../components/Hero/Hero'
+import Places from '../components/Places/Places'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         </video>
                 <Hero/>
       </div>
+      <Places/>
       </div>
     </>
   )
