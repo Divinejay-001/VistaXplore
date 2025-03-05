@@ -77,13 +77,15 @@ const Places = () => {
             <h1 className='
           my-8 border-l-8 border-primary/40 py-2 pl-2 text-3xl
           font-bold'>Best Places to visit</h1>
-          <div data-aos='fade-up'
+          <div 
           className='grid grid-cols-1 sm:grid-cols-3
           gap-4 '>
             {
-                PlacesData.map((item, index)=>(
-                    <PlacesCard key={index}
-                    {...item}/>
+                PlacesData.map((item, index, data)=>(
+                    <div data-aos='fade-up' data-aos-delay={data.aosDelay} >
+                      <PlacesCard key={index}
+                      {...item}/>
+                    </div>
                 ))
             }
           </div>

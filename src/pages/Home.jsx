@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero'
 import Places from '../components/Places/Places'
 import Banner from '../components/Banner/Banner'
 import Blog from '../pages/Blog'
+import Bannerbag from '../components/Banner2/Bannerbag'
 const Home = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Home = () => {
       <Places/>
       <Banner/>
       <Blog/>
+      <Bannerbag/>
       </div>
     </>
   )
