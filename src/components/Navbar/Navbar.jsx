@@ -46,7 +46,7 @@ const Navbar = () => {
         <div>
          <Link to='/' onClick={()=> window.scrollTo(0, 0)}>
          <img src={logoImg} alt=""
-         className='h-20 w-24 ' />
+         className='h-14  sm:h-20 sm:w-24 ' />
          </Link>
         </div>
         {/*Desktop NavLinks  */}
