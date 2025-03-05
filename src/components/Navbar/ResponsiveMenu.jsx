@@ -28,7 +28,7 @@ const ResponsiveMenu = ({showMenu, setShowMenu}) => {
     } fixed bottom-0 top-0 z-20 flex h-screen 
     w-[75%] flex-col  justify-between bg-white 
 dark:text-white  px-8 pb-6 pt-16 text-black
-    transition-all duration-200 md:hidden rounded-r-xl shadow-md`}>
+    transition-all duration-200 md:hidden rounded-r-xl shadow-md `}>
     <div className='Navbar_card'>
         {/* top sec  */}
         <div>

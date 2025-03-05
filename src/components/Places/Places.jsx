@@ -15,7 +15,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"0"
+
     },
     {
      img:Img2,
@@ -23,7 +25,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"200"
+ 
     },
     {
      img:Img3,
@@ -31,7 +35,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"400"
+ 
     },
     {
      img:Img4,
@@ -39,7 +45,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"600"
+ 
     },
     {
      img:Img5,
@@ -47,7 +55,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"800"
+ 
     },
     {
      img:Img6,
@@ -55,7 +65,9 @@ const PlacesData=[
      location:'Paris',
      description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
      price:100,
-      type:'Cultural Relax' 
+      type:'Cultural Relax',
+      aosDelay:"1000"
+ 
     },
 ]
 const Places = () => {
@@ -65,7 +77,8 @@ const Places = () => {
             <h1 className='
           my-8 border-l-8 border-primary/40 py-2 pl-2 text-3xl
           font-bold'>Best Places to visit</h1>
-          <div className='grid grid-cols-1 sm:grid-cols-3
+          <div data-aos='fade-up'
+          className='grid grid-cols-1 sm:grid-cols-3
           gap-4 '>
             {
                 PlacesData.map((item, index)=>(

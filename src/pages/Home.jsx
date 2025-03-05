@@ -2,7 +2,8 @@ import React from 'react'
 import NatureVideo from '../assets/video/main.mp4'
 import Hero from '../components/Hero/Hero'
 import Places from '../components/Places/Places'
-
+import Banner from '../components/Banner/Banner'
+import Blog from '../pages/Blog'
 const Home = () => {
   return (
     <>
@@ -20,6 +21,8 @@ const Home = () => {
                 <Hero/>
       </div>
       <Places/>
+      <Banner/>
+      <Blog/>
       </div>
     </>
   )

@@ -2,11 +2,11 @@ import React from 'react'
 import { IoLocationSharp } from 'react-icons/io5'
 
 const PlacesCard = ({img, title, location, 
-    description, price, type
+    description, price, type, aosDelay
 }) => {
   return (
     <div className='shadow-lg transiton-all duration-500 hover:shadow-xl cursor-pointer '>
-        <div className='overflow-hidden'>
+        <div data-aos-delay={aosDelay} className='overflow-hidden '>
     <img src={img} alt="" className='mx-auto h-[220px] w-full
     object-cover transition duration-700
     hover:skew-x-2 hover:scale-110 '/>

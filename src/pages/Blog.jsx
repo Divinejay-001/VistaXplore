@@ -1,8 +1,11 @@
 import React from 'react'
+import BlogsComp from '../components/Blogs/BlogsComp'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div className='min-h-screen pt-14 bg-gray-100'>
+      <BlogsComp/>
+    </div>
   )
 }
 

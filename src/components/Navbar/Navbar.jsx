@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logoImg from '../../assets/Travel.png'
 import { FaCaretDown } from 'react-icons/fa'
-import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
+import {  HiMenuAlt3 } from 'react-icons/hi'
 import ResponsiveMenu from './ResponsiveMenu'
+import { MdClose } from 'react-icons/md'
 
 
 const dropdownLinks =[
@@ -123,7 +124,7 @@ to='/blog' onClick={() => window.scrollTo(0, 0)}>
                 {/* Mobile sec  */}
                 <div className='md:hidden block '>
               {showMenu? (
-                <HiMenuAlt1 
+                <MdClose 
                 onClick={toggleMenu}
                 className='
                 cursor-pointer transition-all
