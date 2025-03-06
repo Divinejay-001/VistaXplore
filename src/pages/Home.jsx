@@ -5,6 +5,7 @@ import Places from '../components/Places/Places'
 import Banner from '../components/Banner/Banner'
 import Blog from '../pages/Blog'
 import Bannerbag from '../components/Banner2/Bannerbag'
+import Testimonial from '../components/Testimonial/Testimonial'
 const Home = () => {
   return (
     <>
@@ -22,9 +23,12 @@ const Home = () => {
                 <Hero/>
       </div>
       <Places/>
-      <Banner/>
+      <Banner img='https://images.pexels.com/photos/531602/pexels-photo-531602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>
       <Blog/>
       <Bannerbag/>
+      <Banner img='https://i.pinimg.com/736x/e9/9d/5e/e99d5e2b2fc0a5a0aebcdf557792c0bb.jpg'/>
+      <Testimonial/>
+      
       </div>
     </>
   )

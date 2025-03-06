@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({img}) => {
     const bgImage={
-        backgroundImage: 'url(https://images.pexels.com/photos/531602/pexels-photo-531602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        backgroundImage:`url(${img})`,
         backgroundSize: 'cover',
         height: '400px',
         backgroundPosition: 'center',            
