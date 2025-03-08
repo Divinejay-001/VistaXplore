@@ -10,6 +10,7 @@ import Nopage from './pages/Nopage'
 import Home from './pages/Home'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import PlaceDetails from './pages/PlaceDetails'
 
 function App() {
   React.useEffect(()=>{
@@ -23,7 +24,7 @@ function App() {
 },[]);
 
   return (
-    <div>
+    <div className='select-none'>
     <BrowserRouter>
     <Routes>
     <Route path='/' element={<LayOut/>}>
@@ -32,6 +33,7 @@ function App() {
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/blog/:id' element={<BlogsDetails/>}/>
     <Route path='/places' element={<PlaceRoute/>}/>
+    <Route path='/places/:id' element={<PlaceDetails/>}/>
     <Route path='*' element={<Nopage/>}/>
     
     </Route>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { IoLocationSharp } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
-const PlacesCard = ({img, title, location, 
+const PlacesCard = ({img, title, link, location, 
     description, price, type, aosDelay
 }) => {
   return (
@@ -12,7 +13,20 @@ const PlacesCard = ({img, title, location,
     hover:skew-x-2 hover:scale-110 '/>
         </div>
         <div className='space-y-2 p-3'>
+        <div className='grid lg:flex items-center lg:justify-between '>
             <h1 className='line-clamp-1 font-bold text-xl'>{title}</h1>
+            <div className=''>
+                <Link 
+                to={`/places/${title}`}
+                onClick={() =>{
+                  window.scrollTo(0, 0);
+            
+                }}
+                state={{img, title, link, location, 
+                    description, price, type, aosDelay}}
+                className='  text-sm underline text-secondary'>{link}</Link>
+            </div>
+        </div>
             <div className='flex items-center gap-2 opacity-70'>
                 <IoLocationSharp/>
                 <span>{location}</span>
