@@ -16,6 +16,7 @@ const Location = () => {
               width="100%"
               height="360"
               allowfullscreen=""
+              framerborder='0'
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               style={{ borderRadius: "20px" }}

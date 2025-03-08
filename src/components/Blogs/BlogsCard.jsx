@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BlogsCard = ({image, date, title,
+const BlogsCard = ({image, date, title, p,
   description, author
 }) => {
   return (
     <Link
     
-    to={`/blogs${title}`}
+    to={`/blog/${title}`}
     onClick={() =>{
       window.scrollTo(0, 0);
 
@@ -31,6 +31,9 @@ const BlogsCard = ({image, date, title,
       <h1 className='line-clamp-1 font-bold'>
         {title}
       </h1>
+      <p className='line-clamp-1 font-bold'>
+        {p}
+      </p>
       <p className='line-clamp-2' >{description}</p>
     </div>
     </div>

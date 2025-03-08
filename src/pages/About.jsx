@@ -32,9 +32,10 @@ const About = () => {
             tempora voluptate vero.
           </p>
         </div>
-      </div>
-      <Location />
+        <Location />
       <BlogsComp />
+      </div>
+      
     </>
   );
 };

@@ -1,75 +1,116 @@
 import React from 'react'
 import PlacesCard from './PlacesCard'
-import Img1 from '../../assets/places/boat.jpg'
-import Img2 from '../../assets/places/tajmahal.jpg'
-import Img3 from '../../assets/places/water.jpg'
-import Img4 from '../../assets/places/place4.jpg'
-import Img5 from '../../assets/places/place5.jpg'
-import Img6 from '../../assets/places/place6.jpg'
+// import Img1 from '../../assets/places/boat.jpg'
+// import Img2 from '../../assets/places/tajmahal.jpg'
+// import Img3 from '../../assets/places/water.jpg'
+// import Img4 from '../../assets/places/place4.jpg'
+// import Img5 from '../../assets/places/place5.jpg'
+// import Img6 from '../../assets/places/place6.jpg'
 
 
-const PlacesData=[
-    {
-     img:Img1,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"0"
+const PlacesData = [
+  {
+      img: 'https://i.pinimg.com/736x/c8/94/e0/c894e0ab00f8386138b2d443b079ee6f.jpg',
+      title: 'Eiffel Tower',
+      location: 'France',
+      description: 'The Eiffel Tower, an iconic symbol of Paris and France, stands tall at 324 meters, offering breathtaking panoramic views of the city. Built in 1889 for the World’s Fair, this iron lattice tower has become a global cultural icon and one of the most visited monuments in the world. Whether admired from the ground, viewed at night when it sparkles, or explored from its observation decks, the Eiffel Tower captures the romance and elegance of Paris like no other landmark.',
+      price: 200,
+      type: 'Adventure Cultural',
+      aosDelay: "0"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/23/8f/3d/238f3d70a4b435bd1274d255c81f0327.jpg',
+      title: 'Santorini',
+      location: 'Greece',
+      description: 'Santorini is famous for its white-washed buildings, stunning sunsets, and breathtaking views of the Aegean Sea.',
+      price: 200,
+      type: 'Romantic Relax',
+      aosDelay: "100"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/26/67/32/266732da943235a087ad8d5ef20477d9.jpg',
+      title: 'Kyoto',
+      location: 'Japan',
+      description: 'Kyoto is a cultural treasure, known for its ancient temples, traditional tea houses, and beautiful cherry blossom gardens.',
+      price: 150,
+      type: 'Cultural Relax',
+      aosDelay: "200"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/0f/41/a7/0f41a7be99579670cd7f223cf8710ed5.jpg',
+      title: 'Machu Picchu',
+      location: 'Peru',
+      description: 'Machu Picchu is an ancient Incan city set high in the Andes, offering history and jaw-dropping views.',
+      price: 180,
+      type: 'Adventure Cultural',
+      aosDelay: "400"
+  },
+  {
+      img: 'https://i.pinimg.com/474x/21/b9/28/21b928a5157870ffed033179370a9f15.jpg',
+      title: 'Bora Bora',
+      location: 'French Polynesia',
+      description: 'Bora Bora offers turquoise lagoons, luxury overwater bungalows, and a paradise-like tropical experience.',
+      price: 500,
+      type: 'Luxury Relax',
+      aosDelay: "600"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/26/0b/e3/260be3f4b12009e56efb2de6f89cef59.jpg',
+      title: 'Cappadocia',
+      location: 'Turkey',
+      description: 'Cappadocia is known for its surreal landscapes, cave dwellings, and iconic hot air balloon rides.',
+      price: 130,
+      type: 'Adventure Relax',
+      aosDelay: "800"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/9d/8a/c9/9d8ac93467a37f6187f71b9307e22719.jpg',
+      title: 'Banff National Park',
+      location: 'Canada',
+      description: 'Banff National Park offers stunning natural beauty with mountains, lakes, and abundant wildlife.',
+      price: 120,
+      type: 'Nature Adventure',
+      aosDelay: "1000"
+  },
+ 
+  {
+      img: 'https://i.pinimg.com/736x/a2/b6/d0/a2b6d0d2fbb1a02a5b3ddd8147382997.jpg',
+      title: 'Queenstown',
+      location: 'New Zealand',
+      description: 'Queenstown is the adventure capital, known for bungee jumping, scenic landscapes, and lake cruises.',
+      price: 140,
+      type: 'Adventure Nature',
+      aosDelay: "1400"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/52/44/a8/5244a8938196dbdd4d697075920c5444.jpg',
+      title: 'Petra',
+      location: 'Jordan',
+      description: 'Petra is an archaeological wonder, with its stunning rock-cut architecture and rich ancient history.',
+      price: 160,
+      type: 'Cultural Historical',
+      aosDelay: "1600"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/7e/b0/6d/7eb06dd56e7fa99fb1696a975c9c0a6f.jpg',
+      title: 'Reykjavik',
+      location: 'Iceland',
+      description: 'Reykjavik offers vibrant culture, geothermal spas, and is the gateway to Iceland’s natural wonders.',
+      price: 170,
+      type: 'Nature Relax',
+      aosDelay: "1800"
+  },
+  {
+      img: 'https://i.pinimg.com/736x/3f/8f/2b/3f8f2bfd9fbad4535eb05c8af3c5c9de.jpg',
+      title: 'Dubai Marina',
+      location: 'Dubai',
+      description: 'Stunning waterfront skyline and lively nightlife',
+      price: 170,
+      type: 'Luxury Relax',
+      aosDelay: "2000"
+  }
+];
 
-    },
-    {
-     img:Img2,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"200"
- 
-    },
-    {
-     img:Img3,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"400"
- 
-    },
-    {
-     img:Img4,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"600"
- 
-    },
-    {
-     img:Img5,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"800"
- 
-    },
-    {
-     img:Img6,
-     title:'Statue',
-     location:'Paris',
-     description:'Paris is the capital and most populous city of France, with an estimated 2,140,621 inhabitants according to the 2019 census.' ,
-     price:100,
-      type:'Cultural Relax',
-      aosDelay:"1000"
- 
-    },
-]
 const Places = () => {
   return (
     <div className='bg-gray-50 py-10 '>

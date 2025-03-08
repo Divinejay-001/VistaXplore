@@ -22,7 +22,7 @@ const dropdownLinks =[
 },
 
 ]
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   const [showMenu, setShowMenu]= useState(false);
 
   const toggleMenu = ()=>{
@@ -115,6 +115,7 @@ to='/blog' onClick={() => window.scrollTo(0, 0)}>
           <div className='flex items-center gap-4'>
             {/* Book btn  */}
                 <button
+                onClick={()=> handleOrderPopup()}
                 className='bg-gradient-to-r
     from-primary to-secondary hover:bg-gradient-to-r
     hover:from-secondary hover:bg-primary
