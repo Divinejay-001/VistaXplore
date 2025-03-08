@@ -25,11 +25,9 @@ const Bannerbag = () => {
           <div>
             <h1   data-aos='fade-up' className='text-3xl text-black font-bold sm:text-4xl'>Explore all corners of the world with us</h1>
             <p  data-aos='fade-up'  className='text-sm text-gray-500 tracking-wide
-            leading-8'>Lorem ipsum dolor sit 
-              amet consectetur adipisicing
-               elit. Eveniet accusamus porro 
-               accusantium debitis facilis inventore obcaecati dolores consequatur quia quas aspernatur
-                dicta ea ipsam iste, iure modi quos! Aliquid, excepturi.
+            leading-8'>  Embark on unforgettable journeys across breathtaking landscapes, vibrant cultures, and hidden gems.  
+            Whether you seek adventure, relaxation, or cultural immersion, our curated experiences will take  
+            you to the most incredible destinations. Join us and turn your travel dreams into reality.
                 {' '}</p>
                 <div data-aos='zoom-in' className='grid grid-cols-2 gap-6'>
                   <div className='space-y-6'>

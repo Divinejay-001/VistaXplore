@@ -42,9 +42,12 @@ const Footer = () => {
             <img src={FooterLogo} className='max-h-[60px]' alt="" />
             {/* Travel Logo  */}
             </h1>
-            <p>
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit fugit itaque deserunt laboriosam iure esse vero voluptates sapiente nostrum earum, voluptatum eos doloribus, nobis sequi corrupti consequuntur atque odit ut. 
-            </p>
+            <p className="text-sm text-black tracking-wide leading-8">
+  At <span className="font-bold">Vistaxplore Travel</span>, we believe that every journey is an opportunity  
+  to discover, learn, and create unforgettable memories. Whether you're planning your next big adventure  
+  or a peaceful getaway, we are here to guide you every step of the way. Let us take you beyond boundaries  
+  and into extraordinary experiences. Start exploring today!
+</p>
             <br />
             <div className='flex items-center
             gap-3 mt-3'>
